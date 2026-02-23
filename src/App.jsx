@@ -52,28 +52,24 @@ function Contact() {
 
 export default App;*/
 /*import BMICalculator from "./components/BMICalculator";
-import Aquaholic from "./components/Aquaholic";
 
 function App() {
   return <BMICalculator />;
-  return <Aquaholic/>;
+
 }
 
 export default App;*/
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
 import Aquaholic from "./components/Aquaholic";
-import AquaDetails from "./components/AquaDetails";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Aquaholic />} />
-        <Route path="/aqua/:id" element={<AquaDetails />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/aqua" element={<Aquaholic />} />
+    </Routes>
   );
 }
 

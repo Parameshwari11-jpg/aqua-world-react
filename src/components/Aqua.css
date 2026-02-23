@@ -1,0 +1,49 @@
+.container {
+  text-align: center;
+  padding: 30px;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #0d3b66;
+}
+
+.image-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.card img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+.detail-img {
+  width: 400px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #0d3b66;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #145da0;
+}
